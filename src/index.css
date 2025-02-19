@@ -120,3 +120,7 @@ body {
 .p-carousel-prev-icon {
     color: #ffffff;
 }
+/* removes the overlay container padding */
+.p-overlaypanel-content{
+    padding: 0px;
+}
