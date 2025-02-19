@@ -53,10 +53,12 @@ const SideTopNAvigation = (props) => {
                             style={{ fontSize: "20px" }}
                         ></i>
                     </div>
-                    <div className="w-full flex gap-2  p-2 px-4    hover:bg-blue-400 hover:text-blue-900 text-gray-500 cursor-pointer">
+                    <div
+                        className="w-full flex gap-2  p-2 px-4    hover:bg-blue-400 hover:text-blue-900 text-gray-500 cursor-pointer"
+                        onClick={() => navigate("/dashboard/users")}
+                    >
                         <button
                             className={`w-full text-left font-semibold   transition duration-200 cursor-pointer`}
-                            onClick={() => navigate("/dashboard/users")}
                         >
                             invite member
                         </button>
@@ -67,7 +69,6 @@ const SideTopNAvigation = (props) => {
                     </div>
                     <div className=" group w-full flex gap-2  p-2 px-4 hover:bg-blue-400 hover:text-blue-900 text-gray-500">
                         <button
-                            // onClick={handleOnDarkMode}
                             className={`w-full text-left  font-semibold group-hover:text-blue-900 text-gray-500 transition duration-200 cursor-pointer`}
                         >
                             Dark Mode
@@ -78,10 +79,12 @@ const SideTopNAvigation = (props) => {
                             className="border-2 border-gray-600 rounded-full"
                         />
                     </div>
-                    <div className=" w-full flex gap-2  p-2  px-4 pb-5 text-gray-500 hover:text-blue-900  hover:bg-blue-400  cursor-pointer ">
+                    <div
+                        className=" w-full flex gap-2  p-2  px-4 pb-5 text-gray-500 hover:text-blue-900  hover:bg-blue-400  cursor-pointer "
+                        onClick={handleOnLogout}
+                    >
                         <button
                             className={`w-full text-left   font-semibold transition duration-200 cursor-pointer`}
-                            onClick={handleOnLogout}
                         >
                             Logout
                         </button>
